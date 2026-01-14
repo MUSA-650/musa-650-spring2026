@@ -24,6 +24,19 @@ The main goal of this class is to give you the conceptual foundation and practic
 
 MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13. In person participation is required. Online participation is an option only in case of a valid excuse with approval.
 
+Class Zoom Meeting Link:   https://pennmedicine.zoom.us/j/91607482543
+
+---
+
+One tap mobile
++19292056099,,91607482543# US (New York)
++13017158592,,91607482543# US (Washington DC)
+
+Join instructions
+https://pennmedicine.zoom.us/meetings/91607482543/invitations?signature=T4D6pRgPx9vOFEawbQBzXh5pZLOABDFZbTt8A02TC0Y
+
+
+
 The course will be divided into two halves. In the first half of the semester, we will focus on building a strong foundational understanding of remote sensing and machine learning. The second half of the semester will delve into more advanced and specific use cases, such as deep learning and data pipelines.
 
 Most weeks, we will divide class time evenly between lectures and labs. Lectures will focus on a conceptual overview of the material, while labs will offer hands-on time to work on pairs or groups on assignments designed to build remote sensing skills applied to planning-specific use case.
