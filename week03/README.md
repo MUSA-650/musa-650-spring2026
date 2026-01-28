@@ -1,7 +1,13 @@
 ## Week 3: Non-ML Approaches to Remote Sensing
 
 ### Lecture
-Slides: [TODO]
+Slides: https://docs.google.com/presentation/d/e/2PACX-1vTOTYqwvctmoNefZbcLZhek4vaHxzxiqc4KJCjrBGV1-TrTWnoKF3SMTmdE3-mcEzAKqkZxNuO3DT7f/pub?start=false&loop=false&delayms=3000
+
+### Additional Resources
+Applied Remote Sensing Training Program, NASA, https://www.earthdata.nasa.gov/data/projects/arset/learn 
+
+Google Earth Engine Tutorials, https://google-earth-engine.com/ 
+
 
 ### Lab: Wildfire Detection and Burn Severity Assessment
 
