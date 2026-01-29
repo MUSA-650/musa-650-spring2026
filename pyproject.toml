@@ -3,12 +3,13 @@ name = "musa-650-spring-2026"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11,<3.12"  # Add this line
+requires-python = ">=3.11,<3.12"
 dependencies = [
     "bokeh>=3.8.1",
     "bottleneck>=1.6.0",
     "cartopy>=0.25.0",
-    "dask[ml]>=2025.12.0",
+    "dask>=2025.12.0",
+    "dask-ml>=2025.1.0",
     "dask-gateway>=2025.4.0",
     "folium>=0.20.0",
     "geopandas>=1.1.1",
@@ -18,11 +19,11 @@ dependencies = [
     "mapclassify>=2.10.0",
     "matplotlib>=3.10.8",
     "netcdf4>=1.7.3",
-    "numpy>=2.4.0",
+    "numpy<2.4.0", 
     "odc-stac>=0.5.0",
     "pandas>=2.3.3",
     "planetary-computer>=1.0.0",
-    "pyarrow>=16.1.0",
+    "pyarrow>=16.1.0,<19", # pin to avoid Abseil issues
     "pystac-client>=0.9.0",
     "rioxarray>=0.17.0,<0.20.0", # use version that supports Python 3.10
     "scikit-image>=0.26.0",
@@ -38,4 +39,18 @@ dependencies = [
     "xgboost>=3.1.2",
     "torch>=2.9.1",
     "torchvision>=0.24.1",
+    "vulture>=2.14",
+    "nbqa>=1.9.1",
+    "black>=26.1.0",
+    "flake8>=7.3.0",
+    "isort>=7.0.0",
+    "pre-commit>=4.1.0",
 ]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88

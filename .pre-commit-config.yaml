@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: nbqa-black
+        name: nbqa-black
+        entry: uv run nbqa black
+        language: system
+        types: [jupyter]
+
+      - id: nbqa-isort
+        name: nbqa-isort
+        entry: uv run nbqa isort
+        language: system
+        types: [jupyter]
+
+      - id: nbqa-flake8
+        name: nbqa-flake8
+        entry: uv run nbqa flake8 --extend-ignore=E501,E722
+        language: system
+        types: [jupyter]

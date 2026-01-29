@@ -33,11 +33,11 @@ Most weeks, we will divide class time evenly between lectures and labs. Lectures
 |--------|------|-------|------------|-------|
 | 1 | 1/15 | Course intro, overview of remote sensing and applications in city planning | | | 
 | 2 | 1/22 | Data sources and IO (Landsat, Sentinel, `pystac-client`, etc.) | | [Landsat ML Cookbook: Foundations](week02/README.md) |
-| 3 | 1/29 | Non-ML approaches to remote sensing (e.g., indices, change detection, time series) | | [Valencia Flooding](week03/README.md) | 
-| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | | [Spectral Clustering](week04/README.md) |
+| 3 | 1/29 | Non-ML approaches to remote sensing (e.g., indices, change detection, time series) | | [EoPF: Sardinia Wildfires](week03/README.md) | 
+| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | | [Landsat ML Cookbook: Spectral Clustering](week04/README.md) |
 | 5 | 2/12 | Supervised learning for land cover classification, Part 1: training data, cross-validation, method and model selection | | [Week 05](week05/README.md) |
 | 6 | 2/19 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification, parameter optimization | | [Week 06](week06/README.md) |
-| 7 | 2/26 | | Midterm Exam | [Google Earth Engine](week07/README.md) |
+| 7 | 2/26 | | Midterm Exam | [Google Earth Engine: Land Cover Classification](week07/README.md) |
 | Spring Break | | | |
 | 8 | 3/12 | Fundamentals of deep learning | | | 
 | 9 | 3/19 | Recent advances in deep learning: literature review and paper discussion | [Final Project Proposal](assignments/FINAL_PROJECT_PROPOSAL.md) | | 
