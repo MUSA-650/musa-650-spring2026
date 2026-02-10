@@ -19,7 +19,7 @@ dependencies = [
     "mapclassify>=2.10.0",
     "matplotlib>=3.10.8",
     "netcdf4>=1.7.3",
-    "numpy<2.4.0", 
+    "numpy<2.4.0",
     "odc-stac>=0.5.0",
     "pandas>=2.3.3",
     "planetary-computer>=1.0.0",
@@ -45,6 +45,7 @@ dependencies = [
     "flake8>=7.3.0",
     "isort>=7.0.0",
     "pre-commit>=4.1.0",
+    "marimo>=0.19.9",
 ]
 
 [tool.black]
