@@ -1,0 +1,16 @@
+Week 3 Notes
+
+Intro: Machine Learning and Deep Learning Concepts
+- Machine Leaning can be viewed like a function that processes inputs generates outputs
+    - Autonomous Driving: inputs = camera feed, sensor values, current speed/direction (accelerometer/GPS info)
+    - Supervised vs. Unsupervised Learning --> whether or not you know the output or not
+- Deep Learning refers to opening the door to generating far more complex models
+    - Multiple linear combinations of variables
+    - Increasingly complex transformations of variables (powers, log, etc.)
+    - Issues with overfitting = important risk --> smoothing algorithms typically applied to overcome this issue
+    - Data required for deep learning is typically far greater than for simple machine learning
+    - Deep learning formulas are so complex that they're almost always iterative approaches
+
+Nissim Lecture Week 3: Remote Sensing without ML
+- All satellite imagery comes with multiple bands, but also comes with x, y, and time values (4 dimensions)
+    - You can examine images over time to calculate differences over time
