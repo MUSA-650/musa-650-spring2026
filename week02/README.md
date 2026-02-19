@@ -1,7 +1,14 @@
 ## Week 2: Remote Sensing Data Sources and IO
 
-### Lecture: 
-Slides: [TODO]
+### Lecture
+Slides: https://docs.google.com/presentation/d/e/2PACX-1vRuiwyYrl8nfDl6x5N5yzepKcBLyHUiS-Ofrpg2Y_Ikn7UfaAV_lDlxwa0mEUsez5NRfnXS96MfVqpK/pub?start=false&loop=false&delayms=3000
+
+### Additional Resources
+Landsat ML Cookbook, Demetris Roumis. https://projectpythia.org/landsat-ml-cookbook/
+
+STAC Spec: https://stacspec.org/en/ 
+
+Cloud-Optimized Geospatial Formats Guide, https://guide.cloudnativegeo.org/ 
 
 ### Lab: Landsat Data Discovery and Access with STAC
 In this lab, you will retrieve Landsat imagery for Singapore and produce a cloud-free composite image. You will work through the full workflow of discovering, inspecting, loading, and exporting satellite data using modern cloud-native tools.
@@ -25,7 +32,7 @@ This tutorial is based on the following resources. You are not limited to using 
 
 #### Part 1: Understand what data is available and how STAC organizes it.
 
-1. Connect to the Planetary Computer STAC catalog using `pystac_client`.
+1. Connect to the Planetary Computer STAC catalog using `pystac-client`.
 
 2. Find the Landsat Collection 2 Level-2 dataset. Per [Project Pythia](https://projectpythia.org/landsat-ml-cookbook/notebooks/data-ingestion-geospatial/):
 > We’ll use the `landsat-c2-l2` dataset, which stands for Collection 2 Level-2. It contains data from several landsat missions and has better data quality than Level 1 (`landsat-c2-l1`). Microsoft Planetary Computer has descriptions of [Level 1](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l1) and [Level 2](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2), but a direct and succinct comparison can be found in [this community post](https://gis.stackexchange.com/questions/439767/landsat-collections), and the information can be verified with [USGS](https://www.usgs.gov/landsat-missions/landsat-collection-2).
@@ -44,7 +51,7 @@ This tutorial is based on the following resources. You are not limited to using 
 
 8. Visualize the STAC item footprints on a map. Do the tiles cover your entire bounding box? Are there gaps?
 
-9. Plot cloudiness over time. Create a plot showing cloud cover percentage for each scene across the year.
+9. Create a time series plot showing cloud cover percentage per scene across the year.
 
 #### Part 3: Combine multiple scenes into a single cloud-free image.
 
