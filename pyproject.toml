@@ -46,6 +46,7 @@ dependencies = [
     "isort>=7.0.0",
     "pre-commit>=4.1.0",
     "marimo>=0.19.9",
+    "shap>=0.50.0",
 ]
 
 [tool.black]
