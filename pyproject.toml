@@ -47,6 +47,8 @@ dependencies = [
     "pre-commit>=4.1.0",
     "marimo>=0.19.9",
     "shap>=0.50.0",
+    "rich>=14.3.3",
+    "xarray-spatial>=0.5.2",
 ]
 
 [tool.black]
