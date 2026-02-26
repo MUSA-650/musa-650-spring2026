@@ -3,6 +3,9 @@
 ### Lecture
 Slides: https://docs.google.com/presentation/d/e/2PACX-1vQvSDXR0Y9ZJuUwOCcEaIcEia_Mqoxky7gQXfZXXpxoOhXvIn3ZRU1IqBkHodytHNs3ZIMjCXtbWRvY/pub?start=false&loop=false&delayms=3000
 
+[Download the PDF](https://docs.google.com/presentation/d/1S5N-kl7F-68KUxitGS2FLhfUaR2zpCdrHj64NTX8kJE/export/pdf)
+
+
 ### Additional Resources
 
 [Supervised Machine Learning for Science](https://ml-science-book.com/)

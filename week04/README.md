@@ -3,6 +3,8 @@
 ### Lecture
 Slides: https://docs.google.com/presentation/d/e/2PACX-1vS7BXOvSJxg_rjSBYnAzn2xL_yD8Ko8b7qTVTsa_Gv_8qweeuK_qPwy6uA7aZIeiJq1B0ic1f5spLXe/pub?start=false&loop=false&delayms=3000
 
+[Download the PDF](https://docs.google.com/presentation/d/1gqe8qXBKMq0Hr5_LGvVr9WEzw2GV5O05XG1goqzGDoc/export/pdf)
+
 ### Lab: Unsupervised and Supervised ML for Water Extent Monitoring
 
 This week, we'll apply k-means clustering and a simple linear classifier to Landsat 8 imagery to monitor changes in a lake in Nevada over time. As usual, you'll generate your own code, working mostly from this [spectral clustering tutorial from the Landsat ML Cookbook](https://projectpythia.org/landsat-ml-cookbook/notebooks/spectral-clustering-pc/).
