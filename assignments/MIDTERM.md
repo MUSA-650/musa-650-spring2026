@@ -1,0 +1,3 @@
+## Midterm Exam
+
+The midterm exam consists of six open-ended questions drawn from labs and lectures in the first half of the semester. The questions will focus on an understanding of the tools and concepts we've covered so far, with an emphasis on real-world application. You'll have an hour and a half to complete any four of the six. The test will be paper and pencil, so please bring something to write with.

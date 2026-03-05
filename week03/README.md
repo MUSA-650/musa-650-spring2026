@@ -3,6 +3,8 @@
 ### Lecture
 Slides: https://docs.google.com/presentation/d/e/2PACX-1vTOTYqwvctmoNefZbcLZhek4vaHxzxiqc4KJCjrBGV1-TrTWnoKF3SMTmdE3-mcEzAKqkZxNuO3DT7f/pub?start=false&loop=false&delayms=3000
 
+[Download as PDF](https://docs.google.com/presentation/d/18AaFaEK1ahsgTOBSQJH04wWsrx1dlZuGjvU-61JsguQ/export/pdf)
+
 ### Additional Resources
 Applied Remote Sensing Training Program, NASA, https://www.earthdata.nasa.gov/data/projects/arset/learn 
 

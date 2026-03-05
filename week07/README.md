@@ -1,120 +1,33 @@
-# Lab: Supervised Land Cover Classification with Landsat 8 and NLCD Data
+## Week 7: Midterm Exam
 
-## Objective
+See the [midterm exam description](../assignments/MIDTERM.md).
 
-In this lab, you will:
+### Lab: Supervised Land Cover Classification with Landsat 8 and NLCD Data
 
-1. Set up and authenticate Google Earth Engine (GEE) using geemap
-2. Load and preprocess Landsat 8 imagery for San Francisco
-3. Retrieve and prepare National Land Cover Dataset (NLCD) training data
-4. Implement supervised classification using Random Forest models
-5. Evaluate model performance across different training sample sizes
-6. Classify a Landsat 8 image and compare results with ground truth NLCD data
+In this lab, you'll learn to use Google Earth Engine (GEE) for supervised land cover classification. GEE is a powerful platform that enables efficient planetary-scale analysis of raster data and is therefore widely used in remote sensing applications. While we won't go into depth on the content this year, you can reference [this presentation from the 2024 class](https://docs.google.com/presentation/d/e/2PACX-1vTch18CngNjfOjh2ChnYbsW4In6Cbdiz1S8iucGW7fe3cYQvUmO4CJ5bq6DqHgXVIfAA8E_Tb3XuKDn/pub?start=false&loop=false&delayms=3000) and the [Google Earth Engine tutorials book](https://google-earth-engine.com/).
 
----
+The lab itself is adapted from [Dr. Qiusheng Wu's NLCD tutorial](https://geemap.org/notebooks/32_supervised_classification/). The hardest part will likely be getting set up and authenticated, which can be a little annoying, and getting used to the different ergonomics of handling data in Earth Engine.
 
-**Important:** this lab is based very closely on [Dr. Qiusheng Wu's NLCD tutorial](https://geemap.org/notebooks/32_supervised_classification/). You will benefit from adapting it for your work.
+#### 1. Set up and authenticate your Google Earth Engine account using `geemap`. 
+Accounts are free for academic/non-profit use. Make sure you copy your project ID correctly; it can be a bit tricky to figure out what it actually is, but you can find it in the top right corner of the Earth Engine Code Editor in the browser: https://code.earthengine.google.com/.
 
-## Instructions
+#### 2. Load data and labels.
+Referencing last week's lab, select imagery with the same cloud cover, AOI, and date range over Vienna. Load our training data into an Earth Engine asset. (This time, though, use native 10m sentinel resolution instead of 60m.) 
 
-### 1. GEE and geemap Setup
+Note that you'll have to convert the parquet data to an Earth Engine asset using `gdf_to_ee`. This will take maybe 15 seconds.
 
-- Install required libraries: `geemap`, `ee`, `numpy`, `matplotlib`
-- Authenticate Google Earth Engine
-- Initialize Earth Engine with your Google Cloud Project
-- Verify successful authentication and initialization
+Plot an interactive map with the median true color and false color composites. Play with the map UI--try using the transparency slider and clicking the layers on and off.
 
-```
-import ee
-import geemap
+#### 3. Train a Random Forest model with an 80/20 split.
+GEE has no tooling for cross-validation, spatial or otherwise. The best option would be exporting the data _post hoc_ to sklearn for true cross validation, but since we covered that last week, we'll skip it here.
 
-ee.Authenticate()
-ee.Initialize(project='your-google-project')
-```
+#### 4. Output metrics and classification.
+Output the metrics available from Earth Engine, including the confusion matrix, overall accuracy, kappa, and producer and consumer's accuracy (i.e., recall and precision) per class.
 
-### 2. Landsat 8 Image Selection and Preprocessing
+Apply the trained model to the entire Vienna scene. How quickly does this happen? How do the results look? Plot them interactively as before.
 
-- Define a point geometry for San Francisco:
-  - Coordinates: [-122.4439, 37.7538]
-- Select a Landsat 8 image with the following criteria:
-  - Collection: LANDSAT/LC08/C02/T1_L2
-  - Date range: January 1, 2016 to December 31, 2016
-  - Sort by lowest cloud cover
+#### 5. Feature importance.
+Using the built-in MDI, print the feature importance for our model. How does this compare to last week's results? What do we recall about MDI and how it differs from permutation importance or SHAP?
 
-The path to the dataset has changed since Dr. Wu wrote his tutorial, so it now looks like this:
-
-```
-point = ee.Geometry.Point([-122.4439, 37.7538])
-
-image = (
-    ee.ImageCollection("LANDSAT/LC08/C02/T1_L2")
-    .filterBounds(point)
-    .filterDate("2016-01-01", "2016-12-31")
-    .sort("CLOUD_COVER")
-    .first()
-    .select("SR_B[1-7]")
-)
-```
-
-- Select spectral bands 1-7 (SR_B1 through SR_B7)
-
-**Analytic Question**:
-Why is it important to select an image with low cloud cover? How might cloud cover impact land cover classification?
-
-### 3. NLCD Data Preparation
-
-- Load National Land Cover Dataset (NLCD)
-- Clip NLCD data to the geometry of the selected Landsat 8 image
-- Visualize the NLCD land cover classification for the area
-
-**Analytic Question**:
-What land cover classes are present in the San Francisco area? How diverse is the landscape?
-
-### 4. Random Forest Model Training
-
-- Implement iterative Random Forest model training with different sample sizes:
-  1. 10 training points
-  2. 100 training points
-  3. 1,000 training points
-  4. 10,000 training points
-- For each model iteration:
-  - Calculate and plot accuracy scores
-  - Calculate and plot Kappa coefficient
-  - Document observations about model performance
-
-**Analytic Questions**:
-
-- How does the number of training samples impact model accuracy?
-- At what point does increasing sample size cease to improve model performance significantly?
-- What are the limitations of using Random Forest for land cover classification?
-
-### 5. Land Cover Classification
-
-- Use the Random Forest model trained on 10,000 points to classify the entire Landsat 8 image
-- Apply the correct color palette for land cover classes
-- Add the NLCD legend to the map for reference
-
-### 6. Model Validation and Comparison
-
-- Compare the classified image with the ground truth NLCD data
-- Identify and discuss:
-  - Areas of agreement
-  - Potential misclassifications
-  - Possible reasons for discrepancies
-
-**Analytic Questions**:
-
-- What factors might contribute to misclassifications?
-- How reliable is this supervised classification method?
-- What additional preprocessing or techniques could improve classification accuracy?
-
----
-
-## Deliverables
-
-1. A Jupyter Notebook with all code, visualizations, and analyses.
-2. Responses to analytic questions embedded in the notebook.
-
-## Collaboration Policy
-
-Work in groups of 2-3 people.
+#### 6. Compare the classifier to ESA WorldCover across all of Austria.
+The best part of GEE is how well it scales. Apply our classifier to Sentinel data across all of Austria and then plot it over ESA WorldCover data. How quickly does it run? How do our results compare to the WorldCover classifications?
