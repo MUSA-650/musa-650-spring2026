@@ -3,6 +3,8 @@
 ### Lecture
 Slides: https://docs.google.com/presentation/d/e/2PACX-1vRuiwyYrl8nfDl6x5N5yzepKcBLyHUiS-Ofrpg2Y_Ikn7UfaAV_lDlxwa0mEUsez5NRfnXS96MfVqpK/pub?start=false&loop=false&delayms=3000
 
+[Download as PDF](https://docs.google.com/presentation/d/1AFE7upwo8u-kK1DNHts94bGQ3BGGsdIGEEzI33adx2Q/export/pdf)
+
 ### Additional Resources
 Landsat ML Cookbook, Demetris Roumis. https://projectpythia.org/landsat-ml-cookbook/
 

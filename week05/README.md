@@ -3,8 +3,10 @@
 ### Lecture
 Slides: https://docs.google.com/presentation/d/e/2PACX-1vR4RgLroTDM9ZBZ1U9afBOOFcHvPOKjorr9WKDQKCsU6gOwriaMwy9VbY62-uHRh-gHayxmc-vM3bn0/pub?start=false&loop=false&delayms=3000
 
+[Download the PDF](https://docs.google.com/presentation/d/1RelyyOyaA8yL-IgplErF9M8wKRnTeh1cBlxRfX-0r8c/export/pdf)
+
 ### Recommend Resources
-- [End-to-end land cover classification workflow](brasil.mapbiomas.org/en/atbd-entenda-cada-etapa/nas) from Mapbiomas
+- [End-to-end land cover classification workflow](https://brasil.mapbiomas.org/en/atbd-entenda-cada-etapa/) from Mapbiomas
 - [Fundamentals of Machine Learning for Earth Science](https://appliedsciences.nasa.gov/get-involved/training/english/arset-fundamentals-machine-learning-earth-science), NASA ARSET
 
 ### Lab: Supervised land cover classification with Sentinel 2

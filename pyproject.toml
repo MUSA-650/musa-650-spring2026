@@ -47,6 +47,7 @@ dependencies = [
     "pre-commit>=4.1.0",
     "marimo>=0.19.9",
     "shap>=0.50.0",
+    "geemap>=0.37.1",
 ]
 
 [tool.black]
