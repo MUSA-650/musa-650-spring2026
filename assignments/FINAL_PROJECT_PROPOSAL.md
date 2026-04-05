@@ -2,6 +2,8 @@
 
 In this assignment, you will outline your proposal for the final project. You will describe the problem you're seeking to solve, justify why your chosen approach is appropriate for that problem, and demonstrate that you understand how your model will actually work. This proposal is your opportunity to think through the conceptual foundations of your project before you begin implementation.
 
+_You may find it to check [our list of tooling, possible methods, and open commercial data catalogs.](../assignments/FINAL_PROJECT_PROPOSAL.md)_
+
 ### Proposal Requirements
 
 Your proposal should be approximately 1,500 words and must address the following areas.
