@@ -2,6 +2,8 @@
 
 For this final project, you will design and implement a machine learning-based remote sensing solution to address a specific problem in urban planning. Building on your proposal, you will develop a working solution, evaluate its performance, and present your work in a professional lightning talk.
 
+_You may find it to check [our list of tooling, possible methods, and open commercial data catalogs.](../assignments/FINAL_PROJECT_PROPOSAL.md)_
+
 ### Submission Guidelines
 
 **All assignments must be completed in groups of 2-3 students.** One member of the group should submit on behalf of everyone, making sure to include all group members' names at the top of the notebook.

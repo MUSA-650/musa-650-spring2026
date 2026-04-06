@@ -18,13 +18,13 @@ Your assignment should be submitted via a pull request to the main branch of thi
 
 Visit [the EuroSAT data description page](https://github.com/phelber/eurosat) and download the data. Perform basic exploratory data analysis, assessing the class distribution across the dataset and plotting one image from each class in a 2x5 grid.
 
-Flatten the images into a 2D data matrix (n x p, where n is the number of samples and p is the number of pixels in each image). Load these and the labels into numpy arrays. Split the data into training (60%) and testing (40%) datasets, stratified on class labels (so that there is an equal percentage of each class type in each of the training and testing sets).
+_Note: for this assignment, you can simply download the multispectral images. For the RGB sections of your submission, just use `rasterio` to select only the relevant bands._
 
-Lastly, create a grayscale version of this dataset. You will use this for the traditional machine learning models and the first couple of deep learning models.
+Flatten the images into a 2D data matrix (n x p, where n is the number of samples and p is the number of pixels in each image). Load these and the labels into numpy arrays. Split the data into training (60%) and testing (40%) datasets, stratified on class labels (so that there is an equal percentage of each class type in each of the training and testing sets). Lastly, create a grayscale version of this dataset. You will use this for the traditional machine learning models and the first couple of deep learning models.
 
 ### 1.2 Data Augmentation
 
-Before splitting the data into training and testing sets or doing any preprocessing, apply data augmentation to increase the size of the dataset, appending the new samples to the original dataset. Indicate the augmentation approach(es) that you used and the total size of the new dataset. Again, plot three random images and a histogram of the label distribution across the full dataset.
+After splitting the data into training and testing sets or doing any preprocessing, apply data augmentation to the training set to increase its size. (It's important to do augmentation _after_ splitting in order to avoid data leakage.) Indicate the augmentation approach(es) that you used and the total size of the new dataset. Again, plot three random images and a histogram of the label distribution across the full dataset.
 
 ## 2. Traditional Machine Learning
 
