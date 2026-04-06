@@ -1,0 +1,48 @@
+Tristan Grupp Lecture: Field Boundary Mapping for Sustainable Supply Chains in South America
+---------------------------------
+- Work for the American Geophysical Union
+- UNet model to identify agricultural boundaries
+
+Motivation
+- 90-99% of deforestation driven by agriculture, driven by 7 commodities (oil palm, soy, wood, cocoa, coffee, cattle, rubber)
+	- 2000-2019, deforestation from soy doubled from 26.4MHa to 55.1MHa
+	- To sell to EU, SA farmers have to prove that these crops did not contribute to deforestation
+
+Fields of the World (FTW) Model --> Kerner et al 2025 "Fields of the World: A 
+- Two windows A and B and semantic layer
+	- A = growing season (greener)
+	- B = harvested (browner)
+	- Semantic = labelled boundaries
+- 70,000 samples with 1.4 million fields, across 24 countries
+	- Only 1.5% of training data from SA
+	- 10m resolution training data
+		- Being adapted to Planet Imagery for use in Africa, 3-5m resolution but lower pixel contrast
+- Different types of fields
+	- Catinga (rectangular), wetland/floodable field hybrids, radial fields w/village at center, mountain cultivation, etc.
+- Data sharing stinginess
+	- Investment in new training data with full-time hand annotators
+	- Using ArcGIS Pro, drawing overall boundary of agricultural extent and clipping out individual fields from shape
+- Sampling
+	- Sampled 50 training chips within Sentinel-2 tiles with poor base model performance
+	- Edited in small holder fields from existing data boundaries
+	- Mato Grosso, rly difficult region to model
+		- Softmax outputs used to identify regions of low confidence (output -1 to 1)
+		- Burn scars from intentional fire clearing confused the model
+		- Model was adapted to identify burning
+		- Compared to high-quality land cover classification outputs "land cover discrepancy samples"
+			- More samples in the south due to type of agriculture
+	- Fine-tuning of model dragged down Pixel IOU and Recall
+		- Addressed with "Catastrophic Forgetting"
+		- Transfer learning employed, was incredibly crucial
+			- Merging models from different locations actually improved results
+- Estimating crop yield in Africa
+	- Uses NDVI, atmospheric/soil moisture, time-varying precipitation, temperature, growing degree days
+	- Signals are unique to each crop
+	- Model can be used to determine whether other crops might be more suitable
+
+
+Examples
+- Google Satellite Embedding V1 --> COG files containing AlphaEarth Foundations annual Satellite Embeddings datasets.
+- GeoPythonTurtorial --> "xarray embeddings similarity search"
+- LGND Discover --> query-able earth models (i.e. linking text to embeddings)
+
