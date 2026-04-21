@@ -1,0 +1,53 @@
+{
+  "fires": [
+    {
+      "name": "Palisades",
+      "X_tensor_file": "X_tensor_palisades.npy",
+      "y_target_file": "y_target_palisades.npy",
+      "aoi_mask_file": "aoi_mask_palisades.npy",
+      "X_shape": [
+        801,
+        1173,
+        7
+      ],
+      "y_shape": [
+        801,
+        1173
+      ],
+      "damaged_pixels": 10111,
+      "aoi_pixels": 243261
+    },
+    {
+      "name": "Eaton",
+      "X_tensor_file": "X_tensor_eaton.npy",
+      "y_target_file": "y_target_eaton.npy",
+      "aoi_mask_file": "aoi_mask_eaton.npy",
+      "X_shape": [
+        465,
+        778,
+        7
+      ],
+      "y_shape": [
+        465,
+        778
+      ],
+      "damaged_pixels": 12287,
+      "aoi_pixels": 142110
+    }
+  ],
+  "channel_names": [
+    "dNBR",
+    "DEM Aspect",
+    "Building Footprints",
+    "Pre-Fire NIR",
+    "Pre-Fire SWIR",
+    "Post-Fire NIR",
+    "Post-Fire SWIR"
+  ],
+  "n_channels": 7,
+  "target_crs": "EPSG:32611",
+  "target_resolution": 20,
+  "pre_fire_window": "2024-12-01 to 2025-01-06",
+  "post_fire_window": "2025-02-01 to 2025-02-28",
+  "random_seed": 42
+}
