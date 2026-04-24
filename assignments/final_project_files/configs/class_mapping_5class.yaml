@@ -1,0 +1,29 @@
+target_names:
+  1: Forest
+  2: Plantation
+  3: Cropland
+  4: Human-use
+  5: Water/Wetland
+
+raw_to_target:
+  1: 5
+  2: 4
+  3: 4
+  4: 3
+  5: 3
+  6: 3
+  7: 5
+  9: 1
+  10: 1
+  11: 1
+  12: 2
+  13: 2
+  14: 1
+
+ignored_raw_classes:
+  - 8
+  - 15
+
+notes:
+  0: Ignore or background
+  assumption: Classes 8 (Grassland) and 15 (Bare) are ignored in the 5-class scheme.

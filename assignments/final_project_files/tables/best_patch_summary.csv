@@ -1,0 +1,13 @@
+tile_id,outerregion_s2_2023_bimonthly_24ch-0000009472-0000000000_r7424_c768
+model,patch_accuracy
+RF baseline,0.726141
+U-Net v1,0.293108
+U-Net v2,0.896882
+
+class_id,class_name,pixels
+0,Ignore,5757
+1,Forest,5985
+2,Plantation,14242
+3,Cropland,15754
+4,Human-use,215130
+5,Water/Wetland,5276
