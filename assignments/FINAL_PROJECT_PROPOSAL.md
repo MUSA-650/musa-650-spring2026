@@ -72,8 +72,6 @@ Describe your proposed architecture, including preprocessing and feature enginee
 
 Check that your input resolution matches your prediction target. Predicting individual buildings from 30 m Landsat is not feasible; if your target is finer than your input, say how you will handle the mismatch or revise the target.
 
-If your model uses several numeric predictors, say how you will check for multicollinearity (a correlation matrix or variance inflation factors) and how you will handle correlated features.
-
 #### Evaluation Strategy
 
 Identify the metrics you will use and explain why they fit your task and use case. Then address two requirements specific to geospatial models:
@@ -93,7 +91,6 @@ Confirm each item before you submit:
 - [ ] I have a baseline comparison planned.
 - [ ] I have a spatial cross-validation strategy.
 - [ ] My input resolution is appropriate for my prediction target.
-- [ ] If I use several numeric predictors, I have a plan to check multicollinearity.
 - [ ] I have a fallback plan if data is unavailable or insufficient.
 
 ### Rubric (10 points)

@@ -62,8 +62,6 @@ Your data is spatial. Neighboring pixels are correlated, so a random pixel or po
 
 If you use a pretrained or foundation model, inspect the embeddings before you trust them. Include a t-SNE, PCA, or nearest-neighbor analysis showing whether the model separates your target classes. When the model was trained on one dataset and applied to another region or sensor, discuss the domain shift and how you validated the transfer.
 
-If your model has several numeric predictors, report a correlation matrix or variance inflation factors. When VIF exceeds 5 to 10, either justify keeping the correlated features or drop or combine them.
-
 #### Future Work
 
 Describe what you would do with more time or resources. How could this solution be scaled, improved, or operationalized for real-world use?
@@ -81,7 +79,7 @@ You may present your work as a video demonstration, a blog post, a LinkedIn arti
 | Category | Weight | Excellent | Satisfactory | Unsatisfactory |
 |----------|--------|-----------|--------------|----------------|
 | Problem Definition & Technical Justification | 5 pts | Clear problem with well-justified approach; accurate description of what model learns; failure modes revisited | Adequate definition; gaps in justification | Problem unclear; approach not justified |
-| Data & Preprocessing | 3 pts | Data appropriate for task; preprocessing documented and justified; multicollinearity checked (correlation or VIF) when relevant | Data adequate; preprocessing weakly justified | Data inappropriate; preprocessing unexplained |
+| Data & Preprocessing | 3 pts | Data appropriate for task; preprocessing documented and justified | Data adequate; preprocessing weakly justified | Data inappropriate; preprocessing unexplained |
 | Baseline Implementation | 3 pts | Baseline implemented and evaluated; clear comparison to primary model | Baseline present but comparison weak | No baseline |
 | Primary Model Implementation | 5 pts | Well-designed architecture; clear documentation; training process explained; pretrained or foundation models inspected with embedding diagnostics | Functional with minor issues | Poor implementation |
 | Evaluation & Analysis | 4 pts | Comprehensive metrics; spatial train/test split justified; honest discussion of successes and failures | Basic evaluation with some analysis; split strategy unjustified | Evaluation missing or superficial; random split with no spatial control |
