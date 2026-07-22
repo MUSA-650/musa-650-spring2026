@@ -1,31 +1,10 @@
-<!--
-Final Project submission.
-See assignments/FINAL_PROJECT.md for the full assignment.
--->
+<!-- Final Project submission. Assignment: assignments/FINAL_PROJECT.md -->
 
 ## Group members
 
-<!-- List everyone in the group. -->
+## Submission logistics
 
-## Project title
-
-## One-paragraph summary
-
-<!-- Problem, approach, and key result. -->
-
-## Submission checklist
-
-- [ ] `final_project.ipynb` is in the `assignments` folder and runs end to end
+- [ ] `final_project.ipynb` is committed to the `assignments` folder
 - [ ] Presentation slides (PDF) are committed to `final_project_files`
-- [ ] All code is linted and formatted with `ruff`
-- [ ] No AI-generated cruft (placeholder comments, redundant docstrings)
-- [ ] Commits are organized and logical
-- [ ] Large files (model weights, raw data) are gitignored, not committed
-- [ ] All group members' names appear at the top of the notebook
-
-## Method checklist
-
-- [ ] Baseline implemented and compared against the primary model
-- [ ] Train/test split is spatial (geographic holdout, spatial block CV, or leave-one-region-out), not a random pixel split
-- [ ] If using a pretrained or foundation model, embeddings inspected (t-SNE, PCA, or nearest-neighbor)
-- [ ] If using several numeric predictors, multicollinearity checked (correlation matrix or VIF)
+- [ ] Large or binary files (model weights, raw imagery) are gitignored, not committed
+- [ ] No stray files committed (`.ipynb_checkpoints`, `.DS_Store`, scratch outputs)
