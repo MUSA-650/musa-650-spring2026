@@ -23,3 +23,6 @@
 | [Maxar Interactive Browser](https://developmentseed.org/stac-map/?href=https%3A%2F%2Fmaxar-opendata.s3.dualstack.us-west-2.amazonaws.com%2Fevents%2Fcatalog.json) | Up to 0.3m | Interactive map for browsing Maxar open data |
 | [Planet NICFI](https://planetarycomputer.microsoft.com/dataset/group/planet-nicfi) | ~5m | Multi-year coverage of tropical forests and the Global South |
 | [Wyvern Hyperspectral](https://opendata.wyvern.space/#/industry/catalog.json) | Varies | Hyperspectral open data STAC catalog |
+| [Capella Space Open Data](https://radiantearth.github.io/stac-browser/#/external/capella-open-data.s3.us-west-2.amazonaws.com/stac/capella-open-data-by-capital/catalog.json?.language=en) | Up to ~0.5m | SAR imagery that sees through cloud and works day or night |
+| [Umbra Open Data](https://radiantearth.github.io/stac-browser/#/external/s3.us-west-2.amazonaws.com/umbra-open-data-catalog/stac/catalog.json?.language=en) | Up to ~0.25m | High-resolution SAR open data across recurring global sites |
+| [ICEYE Open Data](https://www.iceye.com/open-data-initiative) | Up to ~0.25m | SAR imagery for disaster monitoring, including flood and change products |

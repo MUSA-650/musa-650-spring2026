@@ -8,6 +8,7 @@ Slides: https://docs.google.com/presentation/d/e/2PACX-1vR4RgLroTDM9ZBZ1U9afBOOF
 ### Recommend Resources
 - [End-to-end land cover classification workflow](https://brasil.mapbiomas.org/en/atbd-entenda-cada-etapa/) from Mapbiomas
 - [Fundamentals of Machine Learning for Earth Science](https://appliedsciences.nasa.gov/get-involved/training/english/arset-fundamentals-machine-learning-earth-science), NASA ARSET
+- [Satellite image annotation with LabelMe](https://github.com/wkentaro/labelme-satellite-image-demo): a worked demo that annotates imagery in LabelMe and converts the labels to GeoJSON for QGIS
 
 ### Lab: Supervised land cover classification with Sentinel 2
 
